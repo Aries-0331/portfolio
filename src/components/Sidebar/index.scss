@@ -1,14 +1,14 @@
-.nav-bar {
+.side-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background: #181818;
-  width: 60px;
+  width: 70px;
   height: 100%;
   position: absolute;
-  top: 0;
   z-index: 3;
-  min-height: 500px;
 
   .logo {
-    display: block;
     padding: 8px 0;
 
     img {
@@ -87,6 +87,12 @@
       }
     }
 
+    a.portfolio-link {
+      &:after {
+        content: 'PORTFOLIO';
+      }
+    }
+
     a.active {
       svg {
         color: #ffd700;
@@ -96,7 +102,7 @@
 
   ul {
     position: absolute;
-    bottom: 20px;
+    bottom: 60px;
     width: 100%;
     display: block;
     padding: 0;

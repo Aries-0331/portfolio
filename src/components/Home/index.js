@@ -3,13 +3,13 @@ import { Link } from 'react-router-dom'
 import Loader from 'react-loaders'
 import LogoTitle from '../../assets/images/A.png'
 import AnimatedLetters from '../AnimatedLetters'
-import Logo from './Logo'
+import portfolioData from '../../data/portfolio.json'
 import './index.scss'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
   const nameArray = 'ries'.split('')
-  const jobArray = 'A Web Developer'.split('')
+  const jobArray = 'A Frontend Developer'.split('')
 
   useEffect(() => {
     setTimeout(() => {
@@ -17,17 +17,42 @@ const Home = () => {
     }, 4000)
   }, [])
 
+  const renderPortfolio = (portfolio) => {
+    return (
+      <div className="images-container">
+        {portfolio.map((port, index) => {
+          return (
+            <div className="image-box" key={index}>
+              <img
+                className="portfolio-image"
+                src={port.cover}
+                alt="portfolio"
+              />
+              <div className="content">
+                <p className="title">{port.title}</p>
+                <h4 className="description">{port.description}</h4>
+                <button className="btn" onClick={() => window.open(port.url)}>
+                  View
+                </button>
+              </div>
+            </div>
+          )
+        })}
+      </div>
+    )
+  }
+
   return (
-    <>
-      <div className="container home-page">
+    <div className="home-container">
+      <div className="greet-container">
         <div className="text-zone">
-          <h1>
+          <h1 className="text-title">
             <span className={letterClass}>H</span>
             <span className={`${letterClass} _12`}>i,</span>
             <br />
             <span className={`${letterClass} _13`}>I</span>
             <span className={`${letterClass} _14`}>'m</span>
-            <img src={LogoTitle} alt="developer" />
+            <img className={'text-img'} src={LogoTitle} alt="developer" />
             <AnimatedLetters
               letterClass={letterClass}
               strArray={nameArray}
@@ -39,16 +64,15 @@ const Home = () => {
               strArray={jobArray}
               idx={22}
             />
+            <Link to="/contact" className="flat-button">
+              CONTACT ME
+            </Link>
           </h1>
-          <h2>Frontend Developer</h2>
-          <Link to="/contact" className="flat-button">
-            CONTACT ME
-          </Link>
         </div>
-        {/* <Logo /> */}
       </div>
+      <div>{renderPortfolio(portfolioData.portfolio)}</div>
       <Loader type="pacman" />
-    </>
+    </div>
   )
 }
 
