@@ -3,12 +3,7 @@ import { Link, NavLink } from 'react-router-dom'
 import LogoA from '../../assets/images/A.png'
 import LogoSubtitle from '../../assets/images/logo_sub.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-  faHome,
-  faUser,
-  faEnvelope,
-  faSuitcase,
-} from '@fortawesome/free-solid-svg-icons'
+import { faHome, faUser, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import {
   faLinkedin,
   faGithub,

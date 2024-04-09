@@ -6,6 +6,7 @@
 }
 
 .greet-container {
+  position: relative;
   width: 100%;
 
   h1.text-title {
@@ -15,29 +16,27 @@
     font-weight: 400;
     padding-top: 50px;
     padding-left: 100px;
+  }
 
-    .flat-button {
-      position: relative;
-      top: auto;
-      right: auto;
-      bottom: 10px;
-      left: 20px;
-      color: #ffd700;
-      font-size: 13px;
-      font-weight: 400;
-      letter-spacing: 4px;
-      font-family: sans-serif;
-      text-decoration: none;
-      padding: 10px 18px;
-      margin-top: 10px;
-      border: 1px solid #ffd700;
-      animation: fadeIn 1s 1.8s backwards;
-      white-space: nowrap;
+  .flat-button {
+    position: absolute;
+    top: 260px;
+    right: 100px;
+    height: 20px;
+    color: #ffd700;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    font-family: sans-serif;
+    text-decoration: none;
+    padding: 10px 18px;
+    border: 1px solid #ffd700;
+    animation: fadeIn 1s 1.8s backwards;
+    white-space: nowrap;
 
-      &:hover {
-        background: #ffd700;
-        color: #333;
-      }
+    &:hover {
+      background: #ffd700;
+      color: #333;
     }
   }
 
@@ -65,7 +64,9 @@
   flex: 1 1 20%;
   max-width: calc(20% - 20px);
   min-width: 200px;
-  height: 500px;
+  height: auto;
+  min-height: 300px;
+  max-height: 450px;
   overflow: hidden;
   border-radius: 10px;
 
@@ -151,5 +152,39 @@
   &:hover .content {
     bottom: 0;
     background: transparent;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .greet-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    h1.text-title {
+      height: auto;
+      margin-bottom: 0;
+      padding-top: 0;
+      padding-left: 0;
+      font-size: 30px;
+    }
+    .flat-button {
+      position: static;
+      height: auto;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .images-container {
+    height: auto;
   }
 }

@@ -26,29 +26,11 @@
   margin-left: -20px;
 }
 
-.large-screen-container {
+.container {
   will-change: contents;
   height: 100%;
   min-height: 566px;
   width: 80%;
-
-  opacity: 0;
-  margin: 0 auto;
-  z-index: 1;
-  transform-style: preserve-3d;
-  animation: fadeIn 1s forwards;
-  animation-delay: 1s;
-}
-
-.small-screen-container {
-  position: absolute;
-  top: 30px;
-  right: 0;
-  bottom: 30px;
-  left: 0;
-  will-change: contents;
-  height: 100%;
-  min-height: 566px;
 
   opacity: 0;
   margin: 0 auto;
@@ -130,6 +112,55 @@
   .text-animate-hover {
     &:hover {
       color: #fff;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .page {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container {
+    will-change: contents;
+    height: 100%;
+    width: 100%;
+
+    opacity: 0;
+    margin: 0 auto;
+    z-index: 1;
+    transform-style: preserve-3d;
+    animation: fadeIn 1s forwards;
+    animation-delay: 1s;
+  }
+
+  .tags {
+    display: none;
+  }
+
+  .about-page,
+  .contact-page,
+  .portfolio-page {
+    h1 {
+      font-size: 40px;
+      margin-bottom: 20px;
+
+      &::before {
+        font-size: 15px;
+        margin-top: -8px;
+        left: -8px;
+      }
+
+      &::after {
+        font-size: 15px;
+        bottom: -15px;
+        margin-left: 15px;
+      }
+    }
+
+    p {
+      font-size: 12px;
     }
   }
 }

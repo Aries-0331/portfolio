@@ -1,58 +1,59 @@
 import './index.scss'
+import { Link, NavLink } from 'react-router-dom'
+import LogoA from '../../assets/images/A.png'
 import React, { useState } from 'react'
-import { NavLink } from 'react-router-dom'
 import { IoClose, IoMenu } from 'react-icons/io5'
 
-const Navbar = () => (
-  <header className="header">
-    <nav className="nav container">
-      <NavLink to="/" className="nav__logo">
-        Navigation Bar
-      </NavLink>
+const Navbar = () => {
+  const [showMenu, setShowMenu] = useState(false)
 
-      <div className={'nav__menu'} id="nav-menu">
-        <ul className="nav__list">
-          <li className="nav__item">
-            <NavLink to="/" className="nav__link">
+  const toggleMenu = () => {
+    setShowMenu(!showMenu)
+  }
+
+  return (
+    <nav className="nav">
+      <Link className="logo" to="/">
+        <img src={LogoA} alt="logo" />
+      </Link>
+      <div className="nav-menu">
+        <ul className={`nav-list ${!showMenu && 'active'}`}>
+          <li className="nav-item">
+            <NavLink to="/" className="nav-link">
               Home
             </NavLink>
           </li>
-          <li className="nav__item">
-            <NavLink to="/news" className="nav__link">
+          <li className="nav-item">
+            <NavLink to="/news" className="nav-link">
               News
             </NavLink>
           </li>
-          <li className="nav__item">
-            <NavLink to="/about-us" className="nav__link">
+          <li className="nav-item">
+            <NavLink to="/about-us" className="nav-link">
               About Us
             </NavLink>
           </li>
-          <li className="nav__item">
-            <NavLink to="/favorite" className="nav__link">
+          <li className="nav-item">
+            <NavLink to="/favorite" className="nav-link">
               Favorite
             </NavLink>
           </li>
-          <li className="nav__item">
-            <NavLink to="/location" className="nav__link">
-              Location
-            </NavLink>
-          </li>
-          <li className="nav__item">
-            <NavLink to="/get-started" className="nav__link nav__cta">
-              Get Started
-            </NavLink>
-          </li>
         </ul>
-        <div className="nav__close" id="nav-close">
+        <div
+          className={`nav-close ${!showMenu && 'active'}`}
+          onClick={toggleMenu}
+        >
           <IoClose />
         </div>
       </div>
-
-      <div className="nav__toggle" id="nav-toggle">
+      <div
+        className={`nav-toggle ${showMenu && 'active'}`}
+        onClick={toggleMenu}
+      >
         <IoMenu />
       </div>
     </nav>
-  </header>
-)
+  )
+}
 
 export default Navbar
