@@ -1,3 +1,20 @@
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  align-items: center;
+  width: 100vm;
+  height: 100vh;
+}
+
+.text-zone {
+  flex: 1 1 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .contact-form {
   width: 100%;
   margin-top: 20px;
@@ -72,14 +89,26 @@
     margin-right: 10px;
   }
 }
+
+.map-wrap {
+  flex: 1 1 auto;
+  background: rgba(8, 253, 216, 0.1);
+  float: right;
+  width: 50%;
+  height: 80%;
+}
+
+.leaflet-container {
+  position: static;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  animation: backInRight 1s 1.2s;
+  animation-fill-mode: forwards;
+}
+
 .info-map {
-  position: absolute;
   background: #000;
-  top: 10rem;
-  right: 30%;
-  z-index: 999999;
-  width: 267px;
-  padding: 20px;
   color: #fff;
   font-family: 'Helvetica';
   font-size: 17px;
@@ -96,18 +125,25 @@
   }
 }
 
-.map-wrap {
-  background: rgba(8, 253, 216, 0.1);
-  float: right;
-  width: 53%;
-  height: 100%;
-}
+@media screen and (max-width: 768px) {
+  .contact-container {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    gap: 20px;
+  }
 
-.leaflet-container {
-  position: static;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  animation: backInRight 1s 1.2s;
-  animation-fill-mode: forwards;
+  .text-zone {
+    padding: 0;
+  }
+
+  .map-wrap {
+    left: 20px;
+    right: 20px;
+    width: calc(100% - 40px);
+    height: 50%;
+  }
 }

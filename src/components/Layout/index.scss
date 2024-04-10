@@ -97,13 +97,7 @@
   }
 
   .text-zone {
-    position: absolute;
-    top: 200px;
-    left: 70px;
-    width: 35%;
-    vertical-align: middle;
-    display: table-cell;
-    max-height: 90%;
+    flex: 0 1 35vw;
   }
 
   .text-animate-hover {
@@ -144,12 +138,7 @@
   .contact-page,
   .portfolio-page {
     .text-zone {
-      display: block;
-      position: absolute;
-      top: 200px;
-      left: 3vh;
-      right: 3vh;
-      width: auto;
+      padding: 20px;
       text-align: start;
     }
     h1 {

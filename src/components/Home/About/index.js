@@ -51,7 +51,7 @@ const About = () => {
               projects.
             </p>
           </div>
-          <div className="skill-container">
+          <div className="cube-container">
             <div className="stage-cube-cont">
               <div className="cubespinner">
                 <div className="face1">
@@ -73,10 +73,6 @@ const About = () => {
                   <FontAwesomeIcon icon={faLinux} color="#333" />
                 </div>
               </div>
-            </div>
-            <div className="skill-zone">
-              {/* <li>Languages: JavaScript | TypeScript | C++ | Python | Shell</li>
-              <li>Frameworks & Libraries: React | Bootstrap | Semantic UI</li> */}
             </div>
           </div>
         </div>
