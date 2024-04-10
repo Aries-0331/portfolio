@@ -3,6 +3,18 @@
   height: 100vh;
 }
 
+.container {
+  height: 100vh;
+  width: 90%;
+
+  opacity: 0;
+  margin: 0 auto;
+  z-index: 1;
+  transform-style: preserve-3d;
+  animation: fadeIn 1s forwards;
+  animation-delay: 1s;
+}
+
 .top-tags {
   bottom: auto;
   top: 35px;
@@ -24,20 +36,6 @@
 
 .bottom-tag-html {
   margin-left: -20px;
-}
-
-.container {
-  will-change: contents;
-  height: 100%;
-  min-height: 566px;
-  width: 80%;
-
-  opacity: 0;
-  margin: 0 auto;
-  z-index: 1;
-  transform-style: preserve-3d;
-  animation: fadeIn 1s forwards;
-  animation-delay: 1s;
 }
 
 .about-page,
@@ -78,7 +76,7 @@
   }
 
   p {
-    font-style: 13px;
+    font-size: 2rem;
     color: #fff;
     font-family: sans-serif;
     font-weight: 300;
@@ -100,9 +98,8 @@
 
   .text-zone {
     position: absolute;
-    top: 50%;
+    top: 200px;
     left: 70px;
-    transform: translateY(-50%);
     width: 35%;
     vertical-align: middle;
     display: table-cell;
@@ -120,12 +117,16 @@
   .page {
     display: flex;
     flex-direction: column;
+    width: 100vw;
+    height: 100vh;
   }
 
   .container {
+    display: flex;
+    flex-direction: column;
     will-change: contents;
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
 
     opacity: 0;
     margin: 0 auto;
@@ -142,25 +143,30 @@
   .about-page,
   .contact-page,
   .portfolio-page {
+    .text-zone {
+      display: block;
+      position: absolute;
+      top: 200px;
+      left: 3vh;
+      right: 3vh;
+      width: auto;
+      text-align: start;
+    }
     h1 {
-      font-size: 40px;
+      font-size: 3rem;
       margin-bottom: 20px;
 
       &::before {
-        font-size: 15px;
-        margin-top: -8px;
-        left: -8px;
+        display: none;
       }
 
       &::after {
-        font-size: 15px;
-        bottom: -15px;
-        margin-left: 15px;
+        display: none;
       }
     }
 
     p {
-      font-size: 12px;
+      font-size: 1.5rem;
     }
   }
 }

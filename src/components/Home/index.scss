@@ -1,12 +1,14 @@
 .home-container {
   display: flex;
   flex-direction: column;
+  gap: 8vh;
   flex-wrap: wrap;
   width: 100%;
 }
 
 .greet-container {
-  position: relative;
+  display: flex;
+  gap: 30px;
   width: 100%;
 
   h1.text-title {
@@ -19,9 +21,8 @@
   }
 
   .flat-button {
-    position: absolute;
+    position: relative;
     top: 260px;
-    right: 100px;
     height: 20px;
     color: #ffd700;
     font-size: 13px;

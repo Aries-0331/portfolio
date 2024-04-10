@@ -1,12 +1,39 @@
-.stage-cube-cont {
-  width: 50%;
-  height: 100%;
-  top: 0;
-  padding-top: 18%;
-  margin-left: 0;
+.about-container {
   position: absolute;
-  right: 0;
-  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 80%;
+  top: 25vh;
+  right: 10vh;
+  left: auto;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.stage-cube-cont {
+  position: static;
+  width: 50vh;
+  height: 30vh;
+  overflow: visible;
+}
+
+.skill-zone {
+  position: relative;
+  width: 100%;
+  height: 50%;
 }
 
 .cubespinner {
@@ -77,5 +104,25 @@
   }
   83% {
     transform: rotateX(90deg);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .stage-cube-cont {
+    position: absolute;
+    top: 40%;
+    right: 0;
+    bottom: auto;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
   }
 }
