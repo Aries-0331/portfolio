@@ -3,12 +3,6 @@ import { Link, NavLink } from 'react-router-dom'
 import LogoA from '../../assets/images/A.png'
 import React, { useState } from 'react'
 import { IoMenu } from 'react-icons/io5'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-  faLinkedin,
-  faGithub,
-  faBlogger,
-} from '@fortawesome/free-brands-svg-icons'
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false)

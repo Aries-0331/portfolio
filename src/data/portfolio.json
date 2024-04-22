@@ -1,10 +1,10 @@
 {
   "portfolio": [
     {
-      "cover": "/portfolio/1/folder.jpg",
-      "title": "K-ON",
-      "description": "React, JSX, Tailwind, Jest",
-      "url": "https://www.google.com"
+      "cover": "/portfolio/brainwave.png",
+      "title": "Brainwave",
+      "description": "React, Tailwind, Vite",
+      "url": "https://brainwave-ruddy-six.vercel.app/"
     },
     {
       "cover": "/portfolio/1/folder.jpg",
