@@ -7,21 +7,21 @@
       "url": "https://brainwave-ruddy-six.vercel.app/"
     },
     {
+      "cover": "/portfolio/debrisnote.png",
+      "title": "K-ON",
+      "description": "Fullstack App, React, Bootstrap, DynamoDB, Lambda, Serverless",
+      "url": "https://debris-notes-frontend.vercel.app/"
+    },
+    {
       "cover": "/portfolio/1/folder.jpg",
       "title": "K-ON",
-      "description": "React, JSX, Tailwind, Jest",
+      "description": "To be done.",
       "url": "https://www.google.com"
     },
     {
       "cover": "/portfolio/1/folder.jpg",
       "title": "K-ON",
-      "description": "React, JSX, Tailwind, Jest",
-      "url": "https://www.google.com"
-    },
-    {
-      "cover": "/portfolio/1/folder.jpg",
-      "title": "K-ON",
-      "description": "React, JSX, Tailwind, Jest",
+      "description": "To be done.",
       "url": "https://www.google.com"
     }
   ]
