@@ -8,15 +8,15 @@
     },
     {
       "cover": "/portfolio/debrisnote.png",
-      "title": "K-ON",
-      "description": "Fullstack App, React, Bootstrap, DynamoDB, Lambda, Serverless",
+      "title": "Debris Notes",
+      "description": "React, Bootstrap, DynamoDB, Lambda, Serverless, Ongoing...",
       "url": "https://debris-notes-frontend.vercel.app/"
     },
     {
-      "cover": "/portfolio/1/folder.jpg",
-      "title": "K-ON",
-      "description": "To be done.",
-      "url": "https://www.google.com"
+      "cover": "/portfolio/promptHub.png",
+      "title": "PromptHub",
+      "description": "Next.js, MongoDB, NextAuth, Tailwind, Ongoing...",
+      "url": "https://prompt-hub-delta.vercel.app/"
     },
     {
       "cover": "/portfolio/1/folder.jpg",
