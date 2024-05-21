@@ -3,26 +3,26 @@
     {
       "cover": "/portfolio/brainwave.png",
       "title": "Brainwave",
-      "description": "React, Tailwind, Vite",
+      "description": "React.js, Tailwind, Vite",
       "url": "https://brainwave-ruddy-six.vercel.app/"
     },
     {
-      "cover": "/portfolio/debrisnote.png",
-      "title": "Debris Notes",
-      "description": "React, Bootstrap, DynamoDB, Lambda, Serverless, Ongoing...",
-      "url": "https://debris-notes-frontend.vercel.app/"
+      "cover": "/portfolio/dashboard.png",
+      "title": "Dashboard",
+      "description": "Next.js, Tailwind, PostgreSQL",
+      "url": "https://nextjs-dashboard-tau-two-25.vercel.app/"
     },
     {
       "cover": "/portfolio/promptHub.png",
       "title": "PromptHub",
-      "description": "Next.js, MongoDB, NextAuth, Tailwind, Ongoing...",
+      "description": "Next.js, Tailwind, MongoDB",
       "url": "https://prompt-hub-delta.vercel.app/"
     },
     {
-      "cover": "/portfolio/1/folder.jpg",
-      "title": "K-ON",
-      "description": "To be done.",
-      "url": "https://www.google.com"
+      "cover": "/portfolio/debrisnote.png",
+      "title": "DebrisNotes",
+      "description": "React.js, Bootstrap, DynamoDB",
+      "url": "https://debris-notes-frontend.vercel.app/"
     }
   ]
 }
