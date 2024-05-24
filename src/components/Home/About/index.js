@@ -35,19 +35,18 @@ const About = () => {
             </h1>
             <p>
               🌱 With a 7-year software development journey, I've evolved from
-              specializing in audio/video security to cultivating a deep-seated
-              passion for front-end development. My pursuit now lies in pushing
-              the boundaries of web design innovation.
+              specializing in software security to cultivating a deep-seated
+              passion for frontend development.
             </p>
             <p>
-              🌟My distinct background harmonizes security acumen with creative
-              front-end prowess, anchoring my efforts on delivering user-centric
-              innovations and technological services.
+              🌟 My distinct background harmonizes software engineering
+              experience with creative frontend skill set, anchoring my efforts
+              on delivering user-centric innovations and technological services.
             </p>
             <p>
-              🔥 Now, I'm deeply fascinated with front-end technologies and
-              looking for a role in established IT company with the opportunity
-              to work with the latest technologies on challenging and diverse
+              🔥 Now, I'm deeply fascinated with frontend technologies and
+              looking for a role in established team with the opportunity to
+              work with the latest technologies on challenging and diverse
               projects.
             </p>
           </div>

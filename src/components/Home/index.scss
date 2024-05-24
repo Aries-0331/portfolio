@@ -1,27 +1,31 @@
 .home-container {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  align-items: center;
   width: 100%;
+  height: auto;
 }
 
 .greet-container {
   display: flex;
-  gap: 30px;
-  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  top: 20px;
+  width: calc(100% - 140px);
+  gap: 20px;
 
   h1.text-title {
+    position: relative;
+    padding-left: 60px;
     color: #fff;
     font-size: 53px;
     font-family: 'Coolvetica';
     font-weight: 400;
-    padding-top: 50px;
-    padding-left: 100px;
   }
 
   .flat-button {
     position: relative;
-    top: 260px;
     height: 20px;
     color: #ffd700;
     font-size: 13px;
@@ -51,22 +55,26 @@
   }
 }
 
+.card-wrapper {
+  display: flex;
+  width: calc(100% - 140px);
+}
+
 .images-container {
   display: flex;
-  flex-wrap: wrap;
+  width: 100%;
   justify-content: space-evenly;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  float: left;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .image-box {
   position: relative;
-  flex: 1 1 20%;
-  max-width: calc(20% - 20px);
-  min-width: 200px;
-  height: auto;
-  min-height: 300px;
-  max-height: 450px;
+  display: flex;
+  flex-flow: row wrap;
+  width: 200px;
+  height: 300px;
   overflow: hidden;
   border-radius: 10px;
 
@@ -80,7 +88,7 @@
 
   .content {
     position: absolute;
-    width: 100%;
+    width: auto;
     z-index: 3;
     padding: 10px 20px;
     transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -164,6 +172,7 @@
   }
 
   .greet-container {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -185,6 +194,8 @@
   }
 
   .images-container {
+    position: relative;
+    top: 20px;
     height: auto;
   }
 }

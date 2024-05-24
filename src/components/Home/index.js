@@ -9,7 +9,7 @@ import './index.scss'
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
   const nameArray = 'ries'.split('')
-  const jobArray = 'A Frontend Developer'.split('')
+  const jobArray = 'Software Developer.'.split('')
 
   useEffect(() => {
     setTimeout(() => {
@@ -61,14 +61,16 @@ const Home = () => {
           <AnimatedLetters
             letterClass={letterClass}
             strArray={jobArray}
-            idx={22}
+            idx={17}
           />
         </h1>
         <Link to="/contact" className="flat-button">
           CONTACT ME
         </Link>
       </div>
-      <div>{renderPortfolio(portfolioData.portfolio)}</div>
+      <div className="card-wrapper">
+        {renderPortfolio(portfolioData.portfolio)}
+      </div>
       <Loader type="pacman" />
     </div>
   )

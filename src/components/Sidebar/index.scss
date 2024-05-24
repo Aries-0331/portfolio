@@ -1,11 +1,12 @@
 .side-bar {
+  position: fixed;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   background: #181818;
   width: 70px;
-  height: 100%;
-  position: absolute;
+  min-height: 100vh;
+
   z-index: 3;
 
   .logo {
