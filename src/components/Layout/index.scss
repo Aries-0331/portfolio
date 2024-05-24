@@ -116,19 +116,20 @@
 
 @media (max-width: 768px) {
   .page {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
   }
 
   .container {
     display: flex;
-    position: relative;
     flex-direction: column;
     will-change: contents;
-    height: 100vh;
+    height: calc(100% - 60px);
+    top: 60px;
     width: 100vw;
 
     opacity: 0;
