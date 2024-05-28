@@ -1,34 +1,34 @@
 {
   "portfolio": [
     {
+      "cover": "/portfolio/portfolio.png",
+      "title": "Portfolio",
+      "description": "My portfolio website build with React.js, Scss and Vite.",
+      "url": "https://aries-portfolio.vercel.app/"
+    },
+    {
       "cover": "/portfolio/brainwave.png",
       "title": "Brainwave",
-      "description": "React.js, Tailwind, Vite",
+      "description": "An AI site webpage build with React.js, Tailwind and Vite.",
       "url": "https://brainwave-ruddy-six.vercel.app/"
     },
     {
       "cover": "/portfolio/dashboard.png",
       "title": "Dashboard",
-      "description": "Next.js, Tailwind, PostgreSQL",
+      "description": "A finacial dashboard build with Next.js, Tailwind and Postgres.",
       "url": "https://nextjs-dashboard-tau-two-25.vercel.app/"
     },
     {
-      "cover": "/portfolio/promptHub.png",
+      "cover": "/portfolio/prompthub.png",
       "title": "PromptHub",
-      "description": "Next.js, Tailwind, MongoDB",
+      "description": "An AI powered prompts hub build with Next.js, Tailwind and MongoDB.",
       "url": "https://prompt-hub-delta.vercel.app/"
     },
     {
-      "cover": "/portfolio/react-kits.png",
-      "title": "ReactKits",
-      "description": "Next.js, TypeScript, Tailwind",
+      "cover": "/portfolio/react-kit.png",
+      "title": "React Kit",
+      "description": "A colloection of React components build with Next.js, TypeScript and Tailwind.",
       "url": "https://react-kits.vercel.app/"
-    },
-    {
-      "cover": "/portfolio/debrisnote.png",
-      "title": "DebrisNotes",
-      "description": "React.js, Bootstrap, DynamoDB",
-      "url": "https://debris-notes-frontend.vercel.app/"
     }
   ]
 }

@@ -19,10 +19,10 @@ const Home = () => {
 
   const renderPortfolio = (portfolio) => {
     return (
-      <div className="images-container">
+      <div className="card-container">
         {portfolio.map((port, index) => {
           return (
-            <div className="image-box" key={index}>
+            <div className="card" key={index}>
               <img
                 className="portfolio-image"
                 src={port.cover}
@@ -48,8 +48,7 @@ const Home = () => {
         <div className="title-wrapper">
           <h1 className="text-title">
             <span className={letterClass}>H</span>
-            <span className={`${letterClass} _12`}>i,</span>
-            <br />
+            <span className={`${letterClass} _12`}>i,</span>{' '}
             <span className={`${letterClass} _13`}>I</span>
             <span className={`${letterClass} _14`}>'m</span>
             <img className={'text-img'} src={LogoTitle} alt="developer" />
@@ -66,15 +65,17 @@ const Home = () => {
             />
           </h1>
           <h2 className="subtitle">
-            Frontend Developer / Embeded Software Developer / Life-Long Learner.
+            Frontend Developer / Software Developer / Life-Long Learner.
           </h2>
         </div>
-        <Link to="/contact" className="flat-button">
-          CONTACT ME
-        </Link>
+        <div className="button-wrapper">
+          <Link to="/contact" className="flat-button">
+            CONTACT ME
+          </Link>
+        </div>
       </div>
 
-      <div className="card-wrapper">
+      <div className="projects-container">
         {renderPortfolio(portfolioData.portfolio)}
       </div>
       <Loader type="pacman" />
