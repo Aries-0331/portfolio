@@ -5,10 +5,10 @@ import Navbar from '../Navbar'
 import './index.scss'
 
 const Layout = () => {
-  const isMobile = useMediaQuery({ query: '(max-width: 768px)' })
+  const largeScreen = useMediaQuery({ query: '(min-width: 768px)' })
   return (
     <div className="page">
-      {isMobile ? <Navbar /> : <Sidebar />}
+      {!largeScreen ? <Navbar /> : <Sidebar />}
       <div className="container">
         <span className="tags top-tags">
           <span className="top-tag-html">&lt;/html&gt;</span>

@@ -15,7 +15,7 @@ const Contact = () => {
 
   return (
     <>
-      <div className="container contact-page">
+      <div className="contact-page">
         <div className="contact-container">
           <div className="text-zone">
             <h1>

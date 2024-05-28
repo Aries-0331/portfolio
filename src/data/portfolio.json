@@ -9,7 +9,13 @@
     {
       "cover": "/portfolio/brainwave.png",
       "title": "Brainwave",
-      "description": "An AI site webpage build with React.js, Tailwind and Vite.",
+      "description": "AI site webpage build with React.js, Tailwind and Vite.",
+      "url": "https://brainwave-ruddy-six.vercel.app/"
+    },
+    {
+      "cover": "/portfolio/next-portfolio.png",
+      "title": "Next Portfolio",
+      "description": "A portfolio website build with Next.js, Tailwind and Vercel.",
       "url": "https://brainwave-ruddy-six.vercel.app/"
     },
     {
@@ -21,7 +27,7 @@
     {
       "cover": "/portfolio/prompthub.png",
       "title": "PromptHub",
-      "description": "An AI powered prompts hub build with Next.js, Tailwind and MongoDB.",
+      "description": "AI powered prompts hub web application build with Next.js, Tailwind and MongoDB.",
       "url": "https://prompt-hub-delta.vercel.app/"
     },
     {

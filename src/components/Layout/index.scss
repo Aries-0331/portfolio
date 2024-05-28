@@ -8,7 +8,7 @@
 .container {
   position: absolute;
   width: 100vw;
-  height: 100vh;
+  height: calc(100vh - 60px);
   top: 60px;
   bottom: 0px;
 
@@ -32,11 +32,11 @@
 }
 
 .top-tags {
-  top: 35px;
+  top: 20px;
 }
 
 .bottom-tags {
-  bottom: 35px;
+  bottom: 0;
 }
 
 .top-tag-html {
@@ -106,7 +106,7 @@
   }
 
   .text-zone {
-    flex: 0 1 35vw;
+    margin-top: 40px;
   }
 
   .text-animate-hover {
