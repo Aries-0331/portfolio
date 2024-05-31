@@ -19,16 +19,16 @@
       "url": "https://Aries-portfolio-1.vercel.app/"
     },
     {
+      "cover": "/portfolio/nike.png",
+      "title": "Nike",
+      "description": "Build a Nike website with React.js, Tailwind and Vite.",
+      "url": "https://nike-two-blue.vercel.app/"
+    },
+    {
       "cover": "/portfolio/dashboard.png",
       "title": "Dashboard",
       "description": "A finacial dashboard build with Next.js, Tailwind and Postgres.",
       "url": "https://nextjs-dashboard-tau-two-25.vercel.app/"
-    },
-    {
-      "cover": "/portfolio/prompthub.png",
-      "title": "PromptHub",
-      "description": "AI powered prompts hub web application build with Next.js, Tailwind and MongoDB.",
-      "url": "https://prompt-hub-delta.vercel.app/"
     },
     {
       "cover": "/portfolio/react-kit.png",
