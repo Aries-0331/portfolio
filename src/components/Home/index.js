@@ -43,43 +43,45 @@ const Home = () => {
   }
 
   return (
-    <div className="home-container">
-      <div className="greet-container">
-        <div className="title-wrapper">
-          <h1 className="text-title">
-            <span className={letterClass}>H</span>
-            <span className={`${letterClass} _12`}>i,</span>{' '}
-            <span className={`${letterClass} _13`}>I</span>
-            <span className={`${letterClass} _14`}>'m</span>
-            <img className={'text-img'} src={LogoTitle} alt="developer" />
-            <AnimatedLetters
-              letterClass={letterClass}
-              strArray={nameArray}
-              idx={15}
-            />
-            <br />
-            <AnimatedLetters
-              letterClass={letterClass}
-              strArray={jobArray}
-              idx={15}
-            />
-          </h1>
-          <h2 className="subtitle">
-            Frontend Developer / Software Developer / Life-Long Learner.
-          </h2>
+    <>
+      <div className="home-container">
+        <div className="greet-container">
+          <div className="title-wrapper">
+            <h1 className="text-title">
+              <span className={letterClass}>H</span>
+              <span className={`${letterClass} _12`}>i,</span>{' '}
+              <span className={`${letterClass} _13`}>I</span>
+              <span className={`${letterClass} _14`}>'m</span>
+              <img className={'text-img'} src={LogoTitle} alt="developer" />
+              <AnimatedLetters
+                letterClass={letterClass}
+                strArray={nameArray}
+                idx={15}
+              />
+              <br />
+              <AnimatedLetters
+                letterClass={letterClass}
+                strArray={jobArray}
+                idx={15}
+              />
+            </h1>
+            <h2 className="subtitle">
+              Frontend Developer / Software Developer / Life-Long Learner.
+            </h2>
+          </div>
+          <div className="button-wrapper">
+            <Link to="/contact" className="flat-button">
+              CONTACT ME
+            </Link>
+          </div>
         </div>
-        <div className="button-wrapper">
-          <Link to="/contact" className="flat-button">
-            CONTACT ME
-          </Link>
-        </div>
-      </div>
 
-      <div className="projects-container">
-        {renderPortfolio(portfolioData.portfolio)}
+        <div className="projects-container">
+          {renderPortfolio(portfolioData.portfolio)}
+        </div>
       </div>
       <Loader type="pacman" />
-    </div>
+    </>
   )
 }
 
