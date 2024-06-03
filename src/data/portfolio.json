@@ -7,7 +7,7 @@
       "url": "https://aries-portfolio.vercel.app/"
     },
     {
-      "cover": "/portfolio/brainwave.png",
+      "cover": "/portfolio/brainwave.WebP",
       "title": "Brainwave",
       "description": "AI site webpage build with React.js, Tailwind and Vite.",
       "url": "https://brainwave-ruddy-six.vercel.app/"
@@ -21,20 +21,20 @@
     {
       "cover": "/portfolio/nike.png",
       "title": "Nike",
-      "description": "Build a Nike website with React.js, Tailwind and Vite.",
+      "description": "A Nike website clone with React.js, Tailwind and Vite.",
       "url": "https://nike-two-blue.vercel.app/"
+    },
+    {
+      "cover": "/portfolio/travel.png",
+      "title": "Camping App",
+      "description": "A camping app build with React.js, Tailwind and Vite.",
+      "url": "https://react-kits.vercel.app/"
     },
     {
       "cover": "/portfolio/dashboard.png",
       "title": "Dashboard",
       "description": "A finacial dashboard build with Next.js, Tailwind and Postgres.",
       "url": "https://nextjs-dashboard-tau-two-25.vercel.app/"
-    },
-    {
-      "cover": "/portfolio/react-kit.png",
-      "title": "React Kit",
-      "description": "A colloection of React components build with Next.js, TypeScript and Tailwind.",
-      "url": "https://react-kits.vercel.app/"
     }
   ]
 }
